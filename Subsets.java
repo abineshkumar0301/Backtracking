@@ -21,6 +21,8 @@ public class Subsets {
 
         printSubsets(arr, 0, new ArrayList<>());
 
+        scanner.close();
+
     }
 
     private static void printSubsets(int[] arr, int idx, List<Integer> subsets){
@@ -32,7 +34,5 @@ public class Subsets {
         printSubsets(arr, idx + 1, subsets);
         subsets.remove(subsets.size() - 1);
         printSubsets(arr, idx + 1, subsets);
-        
-
     }
 }
